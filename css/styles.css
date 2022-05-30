@@ -5,6 +5,7 @@
 /* футер вторичный цвет : rgba(255, 255, 255, 0.6); */
 /* бекграунд фон : #2F303A; */
 /* бекграунд кнопка main : #188CE8 */
+/* бекграунд секции команда : #F5F4FA */
 
 :root {
     --primary-text-color: #757575;
@@ -14,6 +15,7 @@
     --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
     --background-fon: #2f303a;
     --background-btn-main: #188ce8;
+    --background-section-four: #f5f4fa;
 }
 
 body {
@@ -160,7 +162,7 @@ ul {
 
 /* команда */
 .section-four {
-    background-color: #f5f4fa;
+    background-color: var(--background-section-four);
 }
 
 .section-four-list .title {
