@@ -3,7 +3,8 @@
 /* акцентный цвет текста : #2196F3; */
 /* заголовок : #FFFFFF; */
 /* футер вторичный цвет : rgba(255, 255, 255, 0.6); */
-/* бекграунд кнопка : #2F303A; */
+/* бекграунд фон : #2F303A; */
+/* бекграунд кнопка main : #188CE8 */
 
 :root {
     --primary-text-color: #757575;
@@ -11,16 +12,35 @@
     --accent-color: #2196f3;
     --white-color: #ffffff;
     --footer-secondary-text-color: rgba(255, 255, 255, 0.6);
+    --background-fon: #2f303a;
+    --background-btn-main: #188ce8;
 }
 
 body {
     font-family: "Roboto", "sans-serif";
+    font-size: 14px;
+    letter-spacing: 0.03em;
     color: var(--primary-text-color);
     background-color: var(--white-color);
 }
 
 ul {
     list-style: none;
+}
+
+.section-two-title,
+.portfolio-section-one-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 /* logo */
@@ -37,10 +57,6 @@ ul {
 
 .logo span {
     color: var(--secondary-text-color);
-}
-
-.logo span:hover {
-    color: var(--accent-color);
 }
 
 /* nav */
@@ -89,7 +105,7 @@ ul {
 }
 
 .section-one {
-    background-color: #2f303a;
+    background-color: var(--background-fon);
 }
 
 .section-one button {
@@ -108,7 +124,7 @@ ul {
 
 .section-one button:hover,
 .section-one button:focus {
-    color: #212121;
+    background-color: var(--background-btn-main);
 }
 
 /* заголовки секций */
@@ -198,7 +214,7 @@ ul {
 
 /* футер */
 .footer {
-    background-color: #2f303a;
+    background-color: var(--background-fon);
 }
 
 /* logo */
@@ -215,10 +231,6 @@ ul {
 
 .logo-footer span {
     color: var(--white-color);
-}
-
-.logo-footer span:hover {
-    color: var(--accent-color);
 }
 
 /* address */
